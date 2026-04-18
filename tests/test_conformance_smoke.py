@@ -25,7 +25,7 @@ from pathlib import Path
 
 import pytest
 
-from contingency_dsl_paper import compile_method
+from contingency_dsl2procedure import compile_method
 
 _REPO = Path(__file__).resolve().parents[2]
 _CONFORMANCE_DIR = _REPO / "contingency-dsl" / "conformance"

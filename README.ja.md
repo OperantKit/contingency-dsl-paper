@@ -1,13 +1,13 @@
-# contingency-dsl-paper
+# contingency-dsl2procedure
 
 :gb: [English README](README.md)
 
-[contingency-dsl](../contingency-dsl/) の JSON AST から学術論文の Method セクションへ変換するコンパイラ。
+[contingency-dsl](https://github.com/OperantKit/contingency-dsl) の JSON AST から学術論文の Method セクションへ変換するコンパイラ。
 
 外部依存ゼロ。適合する `ast-schema.json` を生成する任意のパーサと連携可能。
 
 ```python
-from contingency_dsl_paper import compile_method
+from contingency_dsl2procedure import compile_method
 
 # 入力: contingency-dsl/ast-schema.json に適合する素の dict
 ast = {

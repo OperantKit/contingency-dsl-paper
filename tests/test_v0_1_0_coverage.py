@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import pytest
 
-from contingency_dsl_paper import compile_method
+from contingency_dsl2procedure import compile_method
 
 
 def _program(schedule: dict, **extra) -> dict:

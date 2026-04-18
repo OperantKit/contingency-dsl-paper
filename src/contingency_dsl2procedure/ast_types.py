@@ -1,7 +1,7 @@
 """Lightweight TypedDict definitions mirroring contingency-dsl schemas.
 
 Defines Python types for the language-independent JSON AST so that
-contingency-dsl-paper has ZERO runtime dependency on a specific parser.
+contingency-dsl2procedure has ZERO runtime dependency on a specific parser.
 Any parser (Python, Rust, etc.) emitting conformant JSON feeds this compiler.
 
 Type discrimination follows the ``type`` field. For ``Modifier`` nodes the

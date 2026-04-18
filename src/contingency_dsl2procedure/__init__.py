@@ -1,4 +1,4 @@
-"""contingency-dsl-paper: Compile contingency-dsl AST to academic paper Method sections.
+"""contingency-dsl2procedure: Compile contingency-dsl AST to academic paper Method sections.
 
 Zero external dependencies. Input is a plain dict conforming to
 contingency-dsl/ast-schema.json. Supports multiple journal styles

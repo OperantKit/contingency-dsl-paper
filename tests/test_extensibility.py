@@ -12,13 +12,13 @@ from dataclasses import replace
 
 import pytest
 
-from contingency_dsl_paper import JEAB, Reference, Style, compile_method, get_style
-from contingency_dsl_paper.references import (
+from contingency_dsl2procedure import JEAB, Reference, Style, compile_method, get_style
+from contingency_dsl2procedure.references import (
     FLESHLER_HOFFMAN_1962,
     register_citation_format,
     unregister_citation_format,
 )
-from contingency_dsl_paper.style import register_style, unregister_style
+from contingency_dsl2procedure.style import register_style, unregister_style
 
 
 def _program_vi30() -> dict:

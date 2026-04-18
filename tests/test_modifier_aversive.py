@@ -1,7 +1,7 @@
 """Phase 3 tests: Modifier and Aversive schedule descriptions."""
 
 import pytest
-from contingency_dsl_paper import compile_method
+from contingency_dsl2procedure import compile_method
 
 
 def _program(schedule: dict) -> dict:

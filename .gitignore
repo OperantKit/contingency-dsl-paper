@@ -35,4 +35,4 @@ PLAN.md
 uv.lock
 
 # hatch-vcs generated version file (derived from git tag)
-src/contingency_dsl_paper/_version.py
+src/contingency_dsl2procedure/_version.py

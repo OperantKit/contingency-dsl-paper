@@ -1,7 +1,7 @@
 """Tests for vocabulary mapping (schedule term -> natural language)."""
 
-from contingency_dsl_paper.style import JABA, JEAB
-from contingency_dsl_paper.vocabulary import (
+from contingency_dsl2procedure.style import JABA, JEAB
+from contingency_dsl2procedure.vocabulary import (
     format_atomic_abbrev,
     format_atomic_full,
     format_combinator,

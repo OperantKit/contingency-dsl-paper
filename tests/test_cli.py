@@ -1,6 +1,6 @@
-"""Tests for the contingency-dsl-paper CLI entrypoint.
+"""Tests for the contingency-dsl2procedure CLI entrypoint.
 
-Covers invocation via ``python -m contingency_dsl_paper`` and via the
+Covers invocation via ``python -m contingency_dsl2procedure`` and via the
 ``main()`` function directly. Input is JSON (file or stdin), output is
 the rendered Method section (stdout or file).
 """
@@ -13,7 +13,7 @@ from pathlib import Path
 
 import pytest
 
-from contingency_dsl_paper.cli import main
+from contingency_dsl2procedure.cli import main
 
 
 def _program_fr5() -> dict:
@@ -192,9 +192,9 @@ class TestCliErrors:
 
 
 class TestModuleEntry:
-    """Ensure ``python -m contingency_dsl_paper`` works."""
+    """Ensure ``python -m contingency_dsl2procedure`` works."""
 
     def test_dunder_main_exists(self) -> None:
-        import contingency_dsl_paper.__main__ as m  # noqa: F401
+        import contingency_dsl2procedure.__main__ as m  # noqa: F401
 
         assert hasattr(m, "main") or True  # import-only smoke test
