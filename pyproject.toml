@@ -3,7 +3,7 @@ requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
-name = "contingency-dsl-paper"
+name = "contingency-dsl2procedure"
 dynamic = ["version"]
 description = "Compiler from contingency-dsl AST to academic paper Method sections (JEAB/JABA style)."
 readme = "README.md"
@@ -15,17 +15,17 @@ dependencies = []
 test = ["pytest>=8", "pytest-cov"]
 
 [project.scripts]
-contingency-dsl-paper = "contingency_dsl_paper.cli:main"
+contingency-dsl2procedure = "contingency_dsl2procedure.cli:main"
 
 [tool.hatch.version]
 source = "vcs"
 fallback-version = "0.0.0"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "src/contingency_dsl_paper/_version.py"
+version-file = "src/contingency_dsl2procedure/_version.py"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/contingency_dsl_paper"]
+packages = ["src/contingency_dsl2procedure"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

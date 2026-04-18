@@ -6,7 +6,7 @@ compound params, and multi-style output.
 
 import pytest
 
-from contingency_dsl_paper import compile_method
+from contingency_dsl2procedure import compile_method
 
 
 def _program(schedule: dict, **kwargs) -> dict:

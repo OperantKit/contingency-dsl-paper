@@ -3,8 +3,8 @@
 Input is plain dict (JSON AST), no contingency-dsl-py dependency.
 """
 
-from contingency_dsl_paper import MethodSection, compile_method
-from contingency_dsl_paper.references import Reference
+from contingency_dsl2procedure import MethodSection, compile_method
+from contingency_dsl2procedure.references import Reference
 
 
 def _program(schedule: dict, **kwargs) -> dict:
@@ -141,7 +141,7 @@ class TestMethodSectionToText:
     """MethodSection.to_text() formatting."""
 
     def test_renders_headings(self) -> None:
-        from contingency_dsl_paper.style import JEAB
+        from contingency_dsl2procedure.style import JEAB
         section = MethodSection(
             subjects="Six rats served.",
             apparatus="Standard chambers.",
@@ -155,7 +155,7 @@ class TestMethodSectionToText:
         assert "### Procedure" in text
 
     def test_omits_empty_sections(self) -> None:
-        from contingency_dsl_paper.style import JEAB
+        from contingency_dsl2procedure.style import JEAB
         section = MethodSection(procedure="FR 5 schedule.", style=JEAB)
         text = section.to_text()
         assert "Subjects" not in text
@@ -163,8 +163,8 @@ class TestMethodSectionToText:
         assert "### Procedure" in text
 
     def test_includes_references(self) -> None:
-        from contingency_dsl_paper.references import FLESHLER_HOFFMAN_1962
-        from contingency_dsl_paper.style import JEAB
+        from contingency_dsl2procedure.references import FLESHLER_HOFFMAN_1962
+        from contingency_dsl2procedure.style import JEAB
         section = MethodSection(
             procedure="VI 30-s schedule.",
             references=(FLESHLER_HOFFMAN_1962,),

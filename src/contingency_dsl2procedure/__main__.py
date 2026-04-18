@@ -1,4 +1,4 @@
-"""Enable ``python -m contingency_dsl_paper``."""
+"""Enable ``python -m contingency_dsl2procedure``."""
 
 from __future__ import annotations
 

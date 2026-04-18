@@ -1,7 +1,7 @@
 """Command-line entrypoint: JSON AST file/stdin -> Method section text.
 
 Usage:
-    contingency-dsl-paper INPUT [--style jeab|jaba] [--output PATH]
+    contingency-dsl2procedure INPUT [--style jeab|jaba] [--output PATH]
                                 [--heading-level N] [--all-experiments]
 
     INPUT is a path to a JSON file, or "-" to read from stdin.
@@ -35,7 +35,7 @@ EXIT_AST = 4
 
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="contingency-dsl-paper",
+        prog="contingency-dsl2procedure",
         description=(
             "Compile a contingency-dsl JSON AST into a Method section "
             "for academic papers (JEAB/JABA style)."

@@ -1,13 +1,13 @@
-# contingency-dsl-paper
+# contingency-dsl2procedure
 
 :jp: [日本語版 README](README.ja.md)
 
-Compiler from [contingency-dsl](../contingency-dsl/) JSON AST to academic paper Method sections.
+Compiler from [contingency-dsl](https://github.com/OperantKit/contingency-dsl) JSON AST to academic paper Method sections.
 
 Zero external dependencies. Works with any parser that emits conformant `ast-schema.json`.
 
 ```python
-from contingency_dsl_paper import compile_method
+from contingency_dsl2procedure import compile_method
 
 # Input: plain dict conforming to contingency-dsl/ast-schema.json
 ast = {

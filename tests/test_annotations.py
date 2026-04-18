@@ -1,6 +1,6 @@
 """Phase 2 tests: annotation integration."""
 
-from contingency_dsl_paper import compile_method
+from contingency_dsl2procedure import compile_method
 
 
 def _full_program() -> dict:
