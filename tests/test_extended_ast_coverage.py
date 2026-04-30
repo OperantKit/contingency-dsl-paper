@@ -1,9 +1,8 @@
-"""Targeted unit tests for the contingency-dsl v0.1.0 compatibility pass.
+"""Targeted unit tests for extended contingency-dsl AST coverage.
 
-These tests document the AST shapes added during the v0.1.0 coverage
-audit and lock in the user-visible prose so future regressions show up
-as focused test failures (rather than being absorbed by the broad
-conformance smoke test).
+These tests pin user-visible prose for AST shapes that the broad
+conformance smoke test would otherwise absorb, so future regressions
+surface as focused test failures.
 """
 
 from __future__ import annotations
